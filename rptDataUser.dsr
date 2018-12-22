@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {D50415CC-0433-43AA-9B9A960BA0FACD9D} rptDataUser
+End
+
+Attribute VB_Name = "rptDataUser"
+

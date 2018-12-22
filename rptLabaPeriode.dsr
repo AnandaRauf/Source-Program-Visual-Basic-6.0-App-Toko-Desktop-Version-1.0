@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {7ADB6868-A865-4B03-BD91C538CABFF1B5} rptLabaPeriode
+End
+
+Attribute VB_Name = "rptLabaPeriode"
+

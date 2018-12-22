@@ -1,0 +1,56 @@
+VERSION 5.00
+Begin {07316439-3F2F-4A61-ACAF545AEDD762A7} rptDataBrgGolongan
+End
+
+Attribute VB_Name = "rptDataBrgGolongan"
+
+
+Private Sub Proc_33_0_609E30(arg_14) '609E30
+  loc_00609E30: push ebp
+  loc_00609E31: mov ebp, esp
+  loc_00609E33: sub esp, 0000000Ch
+  loc_00609E36: push 00405696h ; __vbaExceptHandler
+  loc_00609E3B: mov eax, fs:[00000000h]
+  loc_00609E41: push eax
+  loc_00609E42: mov fs:[00000000h], esp
+  loc_00609E49: sub esp, 0000000Ch
+  loc_00609E4C: push ebx
+  loc_00609E4D: push esi
+  loc_00609E4E: push edi
+  loc_00609E4F: mov var_C, esp
+  loc_00609E52: mov var_8, 00404490h
+  loc_00609E59: mov eax, Me
+  loc_00609E5C: mov ecx, eax
+  loc_00609E5E: and ecx, 00000001h
+  loc_00609E61: mov var_4, ecx
+  loc_00609E64: and al, FEh
+  loc_00609E66: push eax
+  loc_00609E67: mov Me, eax
+  loc_00609E6A: mov edx, [eax]
+  loc_00609E6C: call [edx+00000004h]
+  loc_00609E6F: mov eax, arg_14
+  loc_00609E72: lea ecx, var_18
+  loc_00609E75: xor esi, esi
+  loc_00609E77: push eax
+  loc_00609E78: push ecx
+  loc_00609E79: mov var_18, esi
+  loc_00609E7C: call [004010C8h] ; __vbaObjSetAddref
+  loc_00609E82: mov var_4, esi
+  loc_00609E85: push 00609E94h
+  loc_00609E8A: lea ecx, var_18
+  loc_00609E8D: call [004012A0h] ; __vbaFreeObj
+  loc_00609E93: ret
+  loc_00609E94: mov eax, Me
+  loc_00609E97: push eax
+  loc_00609E98: mov edx, [eax]
+  loc_00609E9A: call [edx+00000008h]
+  loc_00609E9D: mov eax, var_4
+  loc_00609EA0: mov ecx, var_14
+  loc_00609EA3: pop edi
+  loc_00609EA4: pop esi
+  loc_00609EA5: mov fs:[00000000h], ecx
+  loc_00609EAC: pop ebx
+  loc_00609EAD: mov esp, ebp
+  loc_00609EAF: pop ebp
+  loc_00609EB0: retn 0014h
+End Sub

@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {B56A15BF-980F-4294-A893052FDF2B0EC7} rptPenjualanPerNota
+End
+
+Attribute VB_Name = "rptPenjualanPerNota"
+

@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {17357DD4-094E-42C6-A917ABDFDEC05ECA} rptDataBrgProdukBarang
+End
+
+Attribute VB_Name = "rptDataBrgProdukBarang"
+

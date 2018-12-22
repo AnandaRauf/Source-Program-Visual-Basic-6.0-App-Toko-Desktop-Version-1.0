@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {B6D9D8FC-B07A-48D9-B9D68C82516175F7} rptReturPembelianPerNota
+End
+
+Attribute VB_Name = "rptReturPembelianPerNota"
+

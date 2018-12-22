@@ -1,0 +1,56 @@
+VERSION 5.00
+Begin {F1E99AE9-3C1C-4A2B-8E0FC6E9A0F358CB} rptDataBrgJenis
+End
+
+Attribute VB_Name = "rptDataBrgJenis"
+
+
+Private Sub Proc_35_0_6125C0(arg_14) '6125C0
+  loc_006125C0: push ebp
+  loc_006125C1: mov ebp, esp
+  loc_006125C3: sub esp, 0000000Ch
+  loc_006125C6: push 00405696h ; __vbaExceptHandler
+  loc_006125CB: mov eax, fs:[00000000h]
+  loc_006125D1: push eax
+  loc_006125D2: mov fs:[00000000h], esp
+  loc_006125D9: sub esp, 0000000Ch
+  loc_006125DC: push ebx
+  loc_006125DD: push esi
+  loc_006125DE: push edi
+  loc_006125DF: mov var_C, esp
+  loc_006125E2: mov var_8, 00404540h
+  loc_006125E9: mov eax, Me
+  loc_006125EC: mov ecx, eax
+  loc_006125EE: and ecx, 00000001h
+  loc_006125F1: mov var_4, ecx
+  loc_006125F4: and al, FEh
+  loc_006125F6: push eax
+  loc_006125F7: mov Me, eax
+  loc_006125FA: mov edx, [eax]
+  loc_006125FC: call [edx+00000004h]
+  loc_006125FF: mov eax, arg_14
+  loc_00612602: lea ecx, var_18
+  loc_00612605: xor esi, esi
+  loc_00612607: push eax
+  loc_00612608: push ecx
+  loc_00612609: mov var_18, esi
+  loc_0061260C: call [004010C8h] ; __vbaObjSetAddref
+  loc_00612612: mov var_4, esi
+  loc_00612615: push 00612624h
+  loc_0061261A: lea ecx, var_18
+  loc_0061261D: call [004012A0h] ; __vbaFreeObj
+  loc_00612623: ret
+  loc_00612624: mov eax, Me
+  loc_00612627: push eax
+  loc_00612628: mov edx, [eax]
+  loc_0061262A: call [edx+00000008h]
+  loc_0061262D: mov eax, var_4
+  loc_00612630: mov ecx, var_14
+  loc_00612633: pop edi
+  loc_00612634: pop esi
+  loc_00612635: mov fs:[00000000h], ecx
+  loc_0061263C: pop ebx
+  loc_0061263D: mov esp, ebp
+  loc_0061263F: pop ebp
+  loc_00612640: retn 0014h
+End Sub

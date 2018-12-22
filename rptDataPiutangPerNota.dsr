@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {A815AA97-B563-4D23-B0EB1FE109C3B073} rptDataPiutangPerNota
+End
+
+Attribute VB_Name = "rptDataPiutangPerNota"
+

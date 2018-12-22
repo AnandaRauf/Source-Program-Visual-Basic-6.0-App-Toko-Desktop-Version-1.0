@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {24202D8D-ECF1-4F3D-8E60137E6F991928} rptDataBrgProdukJenis
+End
+
+Attribute VB_Name = "rptDataBrgProdukJenis"
+

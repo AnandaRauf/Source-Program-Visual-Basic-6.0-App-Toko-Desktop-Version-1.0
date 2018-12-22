@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {8CE84105-C6E2-4A6F-89E6D8B4DF305D83} rptPenjualanPerBarang
+End
+
+Attribute VB_Name = "rptPenjualanPerBarang"
+

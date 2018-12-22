@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {843B7419-33C7-46C4-86F2032614EB0623} rptPenjualanSemua
+End
+
+Attribute VB_Name = "rptPenjualanSemua"
+

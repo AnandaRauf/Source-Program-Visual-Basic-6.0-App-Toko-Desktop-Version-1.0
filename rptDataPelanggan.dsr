@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {7E9DB1F3-A80C-4D76-925403D7C3F37A7E} rptDataPelanggan
+End
+
+Attribute VB_Name = "rptDataPelanggan"
+

@@ -1,0 +1,56 @@
+VERSION 5.00
+Begin {C01E0387-E17E-46B8-A6824CAD437C70BD} rptPembelianPerNota
+End
+
+Attribute VB_Name = "rptPembelianPerNota"
+
+
+Private Sub Proc_44_0_61D3F0(arg_14) '61D3F0
+  loc_0061D3F0: push ebp
+  loc_0061D3F1: mov ebp, esp
+  loc_0061D3F3: sub esp, 0000000Ch
+  loc_0061D3F6: push 00405696h ; __vbaExceptHandler
+  loc_0061D3FB: mov eax, fs:[00000000h]
+  loc_0061D401: push eax
+  loc_0061D402: mov fs:[00000000h], esp
+  loc_0061D409: sub esp, 0000000Ch
+  loc_0061D40C: push ebx
+  loc_0061D40D: push esi
+  loc_0061D40E: push edi
+  loc_0061D40F: mov var_C, esp
+  loc_0061D412: mov var_8, 00404848h
+  loc_0061D419: mov eax, Me
+  loc_0061D41C: mov ecx, eax
+  loc_0061D41E: and ecx, 00000001h
+  loc_0061D421: mov var_4, ecx
+  loc_0061D424: and al, FEh
+  loc_0061D426: push eax
+  loc_0061D427: mov Me, eax
+  loc_0061D42A: mov edx, [eax]
+  loc_0061D42C: call [edx+00000004h]
+  loc_0061D42F: mov eax, arg_14
+  loc_0061D432: lea ecx, var_18
+  loc_0061D435: xor esi, esi
+  loc_0061D437: push eax
+  loc_0061D438: push ecx
+  loc_0061D439: mov var_18, esi
+  loc_0061D43C: call [004010C8h] ; __vbaObjSetAddref
+  loc_0061D442: mov var_4, esi
+  loc_0061D445: push 0061D454h
+  loc_0061D44A: lea ecx, var_18
+  loc_0061D44D: call [004012A0h] ; __vbaFreeObj
+  loc_0061D453: ret
+  loc_0061D454: mov eax, Me
+  loc_0061D457: push eax
+  loc_0061D458: mov edx, [eax]
+  loc_0061D45A: call [edx+00000008h]
+  loc_0061D45D: mov eax, var_4
+  loc_0061D460: mov ecx, var_14
+  loc_0061D463: pop edi
+  loc_0061D464: pop esi
+  loc_0061D465: mov fs:[00000000h], ecx
+  loc_0061D46C: pop ebx
+  loc_0061D46D: mov esp, ebp
+  loc_0061D46F: pop ebp
+  loc_0061D470: retn 0014h
+End Sub

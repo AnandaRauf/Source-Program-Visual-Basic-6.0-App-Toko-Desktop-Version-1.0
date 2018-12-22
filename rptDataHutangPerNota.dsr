@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {39D78786-90A5-4260-B9FE7A0301635271} rptDataHutangPerNota
+End
+
+Attribute VB_Name = "rptDataHutangPerNota"
+

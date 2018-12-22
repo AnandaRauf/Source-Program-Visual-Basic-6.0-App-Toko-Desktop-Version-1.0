@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {650542F8-B2BA-42EC-A8E86BE9A5EEA0D3} rptDataPiutang
+End
+
+Attribute VB_Name = "rptDataPiutang"
+

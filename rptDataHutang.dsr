@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {1356FDF1-6CA5-4668-B76792E789A44F17} rptDataHutang
+End
+
+Attribute VB_Name = "rptDataHutang"
+

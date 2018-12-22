@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {29D630C7-C828-4C1F-BCFAB729AA83F651} rptReturPenjualanPeriode
+End
+
+Attribute VB_Name = "rptReturPenjualanPeriode"
+

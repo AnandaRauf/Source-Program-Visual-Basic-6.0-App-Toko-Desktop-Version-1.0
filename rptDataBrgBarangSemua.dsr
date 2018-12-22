@@ -1,0 +1,106 @@
+VERSION 5.00
+Begin {FB7935C8-29A7-4B70-9ABE2DEABA370794} rptDataBrgBarangSemua
+End
+
+Attribute VB_Name = "rptDataBrgBarangSemua"
+
+
+Private Function Proc_39_0_617080
+  loc_00617080: push ebp
+  loc_00617081: mov ebp, esp
+  loc_00617083: sub esp, 0000000Ch
+  loc_00617086: push 00405696h ; __vbaExceptHandler
+  loc_0061708B: mov eax, fs:[00000000h]
+  loc_00617091: push eax
+  loc_00617092: mov fs:[00000000h], esp
+  loc_00617099: sub esp, 00000030h
+  loc_0061709C: push ebx
+  loc_0061709D: push esi
+  loc_0061709E: push edi
+  loc_0061709F: mov var_C, esp
+  loc_006170A2: mov var_8, 004046B8h
+  loc_006170A9: mov esi, Me
+  loc_006170AC: mov eax, esi
+  loc_006170AE: and eax, 00000001h
+  loc_006170B1: mov var_4, eax
+  loc_006170B4: and esi, FFFFFFFEh
+  loc_006170B7: push esi
+  loc_006170B8: mov Me, esi
+  loc_006170BB: mov ecx, [esi]
+  loc_006170BD: call [ecx+00000004h]
+  loc_006170C0: mov edx, [esi]
+  loc_006170C2: push 0000000Ah
+  loc_006170C4: push esi
+  loc_006170C5: mov var_38, 00000000h
+  loc_006170CC: call [edx+00000048h]
+  loc_006170CF: test eax, eax
+  loc_006170D1: fnclex
+  loc_006170D3: jge 006170E4h
+  loc_006170D5: push 00000048h
+  loc_006170D7: push 0043B5D0h
+  loc_006170DC: push esi
+  loc_006170DD: push eax
+  loc_006170DE: call [00401080h] ; __vbaHresultCheckObj
+  loc_006170E4: mov eax, [esi]
+  loc_006170E6: push 0000000Ah
+  loc_006170E8: push esi
+  loc_006170E9: call [eax+00000058h]
+  loc_006170EC: test eax, eax
+  loc_006170EE: fnclex
+  loc_006170F0: jge 00617101h
+  loc_006170F2: push 00000058h
+  loc_006170F4: push 0043B5D0h
+  loc_006170F9: push esi
+  loc_006170FA: push eax
+  loc_006170FB: call [00401080h] ; __vbaHresultCheckObj
+  loc_00617101: lea ebx, var_38
+  loc_00617104: mov ecx, 0000000Ah
+  loc_00617109: push ebx
+  loc_0061710A: mov var_24, ecx
+  loc_0061710D: sub esp, 00000010h
+  loc_00617110: mov eax, 80020004h
+  loc_00617115: mov ebx, esp
+  loc_00617117: mov edx, eax
+  loc_00617119: sub esp, 00000010h
+  loc_0061711C: mov edi, [esi]
+  loc_0061711E: mov [ebx], ecx
+  loc_00617120: mov ecx, var_30
+  loc_00617123: mov [ebx+00000004h], ecx
+  loc_00617126: mov ecx, esp
+  loc_00617128: push 00000000h
+  loc_0061712A: push FFFFFFFFh
+  loc_0061712C: mov [ebx+00000008h], eax
+  loc_0061712F: mov eax, var_28
+  loc_00617132: push esi
+  loc_00617133: mov [ebx+0000000Ch], eax
+  loc_00617136: mov eax, var_24
+  loc_00617139: mov [ecx], eax
+  loc_0061713B: mov eax, var_20
+  loc_0061713E: mov [ecx+00000004h], eax
+  loc_00617141: mov [ecx+00000008h], edx
+  loc_00617144: mov edx, var_18
+  loc_00617147: mov [ecx+0000000Ch], edx
+  loc_0061714A: call [edi+00000080h]
+  loc_00617150: test eax, eax
+  loc_00617152: fnclex
+  loc_00617154: jge 00617168h
+  loc_00617156: push 00000080h
+  loc_0061715B: push 0043B5D0h
+  loc_00617160: push esi
+  loc_00617161: push eax
+  loc_00617162: call [00401080h] ; __vbaHresultCheckObj
+  loc_00617168: mov var_4, 00000000h
+  loc_0061716F: mov eax, Me
+  loc_00617172: push eax
+  loc_00617173: mov ecx, [eax]
+  loc_00617175: call [ecx+00000008h]
+  loc_00617178: mov eax, var_4
+  loc_0061717B: mov ecx, var_14
+  loc_0061717E: pop edi
+  loc_0061717F: pop esi
+  loc_00617180: mov fs:[00000000h], ecx
+  loc_00617187: pop ebx
+  loc_00617188: mov esp, ebp
+  loc_0061718A: pop ebp
+  loc_0061718B: retn 0004h
+End Sub

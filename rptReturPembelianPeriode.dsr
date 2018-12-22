@@ -1,0 +1,6 @@
+VERSION 5.00
+Begin {8930E561-AD4C-43B4-A9AF3C46FBCFEFD1} rptReturPembelianPeriode
+End
+
+Attribute VB_Name = "rptReturPembelianPeriode"
+
