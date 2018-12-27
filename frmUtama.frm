@@ -14,28 +14,76 @@ Begin VB.Form frmUtama
    WindowState     =   2  'Maximized
    Begin VB.Frame Frame5 
       BackColor       =   &H00FFFFFF&
+      BeginProperty Font 
+         Name            =   "Lucida Calligraphy"
+         Size            =   12
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   3735
       Left            =   120
-      TabIndex        =   19
+      TabIndex        =   17
       Top             =   1080
       Width           =   7095
-      Begin VB.Label Label1 
-         BackColor       =   &H00FFFFFF&
-         Caption         =   "Point Of Sales"
+      Begin VB.Label Label3 
+         BackColor       =   &H80000014&
+         Caption         =   "23 December ©2018"
          BeginProperty Font 
-            Name            =   "Vivaldi"
-            Size            =   48
+            Name            =   "Lucida Calligraphy"
+            Size            =   9.75
             Charset         =   0
-            Weight          =   700
+            Weight          =   400
             Underline       =   0   'False
-            Italic          =   -1  'True
+            Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H000000FF&
-         Height          =   1095
+         Height          =   375
          Left            =   480
-         TabIndex        =   20
-         Top             =   1200
+         TabIndex        =   22
+         Top             =   2040
+         Width           =   4335
+      End
+      Begin VB.Label Label2 
+         BackColor       =   &H80000014&
+         Caption         =   "Version 1.0"
+         BeginProperty Font 
+            Name            =   "Lucida Calligraphy"
+            Size            =   12
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00C00000&
+         Height          =   615
+         Left            =   480
+         TabIndex        =   21
+         Top             =   1320
+         Width           =   4335
+      End
+      Begin VB.Label Label1 
+         BackColor       =   &H00FFFFFF&
+         Caption         =   "Software App Toko"
+         BeginProperty Font 
+            Name            =   "Lucida Calligraphy"
+            Size            =   20.25
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H0000C000&
+         Height          =   1095
+         Index           =   0
+         Left            =   360
+         TabIndex        =   18
+         Top             =   360
          Width           =   6255
       End
    End
@@ -104,7 +152,7 @@ Begin VB.Form frmUtama
          Left            =   1200
          ScaleHeight     =   435
          ScaleWidth      =   1995
-         TabIndex        =   21
+         TabIndex        =   19
          ToolTipText     =   "Keluar"
          Top             =   240
          Width           =   2055
@@ -263,53 +311,25 @@ Begin VB.Form frmUtama
       Top             =   7020
       Width           =   15120
    End
-   Begin VB.Label Label3 
-      Alignment       =   2  'Center
+   Begin VB.Label Label1 
       BackColor       =   &H00FFFFFF&
-      Caption         =   "085731230992"
+      Caption         =   "Software App Toko"
       BeginProperty Font 
-         Name            =   "Book Antiqua"
-         Size            =   12
+         Name            =   "Lucida Calligraphy"
+         Size            =   20.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      ForeColor       =   &H000000FF&
-      Height          =   255
-      Left            =   12240
-      TabIndex        =   18
-      Top             =   6360
-      Width           =   2775
-   End
-   Begin VB.Label Label2 
-      Alignment       =   2  'Center
-      BackColor       =   &H00FFFFFF&
-      Caption         =   "www.vbawam.com"
-      BeginProperty Font 
-         Name            =   "Book Antiqua"
-         Size            =   12
-         Charset         =   0
-         Weight          =   700
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ForeColor       =   &H000000FF&
-      Height          =   255
-      Left            =   12240
-      TabIndex        =   17
-      Top             =   6000
-      Width           =   2775
-   End
-   Begin VB.Image Image3 
-      Height          =   735
-      Left            =   12240
-      Picture         =   "frmUtama.frx":1B0E
-      Stretch         =   -1  'True
-      Top             =   5160
-      Width           =   2775
+      ForeColor       =   &H0000C000&
+      Height          =   1095
+      Index           =   1
+      Left            =   0
+      TabIndex        =   20
+      Top             =   0
+      Width           =   6255
    End
    Begin VB.Label TxtInfo 
       BackColor       =   &H00FFFFFF&
@@ -536,10 +556,6 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-
-
-
-
 Private Sub MnuRegisterProg_Click() '5A54D0
 loc_005A54D0:   push ebp
 loc_005A54D1:   mov ebp, esp
@@ -3934,7 +3950,7 @@ loc_005A3961:   pop ebp
   loc_005A3962: retn 0004h
 End Sub
 
-Private Sub mnuKeluar_Click() '5A42D0
+Private Sub mnuKeluar_Click()
 loc_005A42D0:   push ebp
 loc_005A42D1:   mov ebp, esp
   loc_005A42D3: sub esp, 0000000Ch
@@ -4006,6 +4022,7 @@ loc_005A4397:   pop ebx
 loc_005A4398:   mov esp, ebp
 loc_005A439A:   pop ebp
   loc_005A439B: retn 0004h
+  
 End Sub
 
 Private Sub mnuProduk_Click() '5A4940
@@ -6166,3 +6183,4 @@ Private Function Proc_16_61_5A2F50()
   loc_005A2F50: xor eax, eax
   loc_005A2F52: retn 0004h
 End Sub
+
